@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.body{
+    min-width: 1330px;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.wrapper{
+	background-color:#F8F8F8;
+	height:100%;
+}
+.header{
+	height: 10%;
+}
+.body{
+	height: 90%;
+}
+.insert-form{
+    width: 600px;
+}
+.submit-btn{
+	display: block;
+    width: 93px;
+    margin: 0 auto;
+}
+	
+.menu{
+    display: inline-block;
+	margin-left:0;
+    padding-top: 10px;
+	height: 100%;
+	width: 23%;
+}
+
+.main{
+	border: solid 1px #e7e7e7;
+	height: 100%;
+	width: 76%;
+	float: right;
+	padding:20px;
+	background-color: #FFFFFF;
+}
