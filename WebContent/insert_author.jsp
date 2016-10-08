@@ -23,21 +23,21 @@
 			<div class="insert-form">
 			<form class="form-horizontal" action="insert_author" role="form" method="POST" onsubmit="return regs('click')">
 				<div class="form-group input_row">
-		    		<label for="isbn" class="col-sm-2 control-label input-label">姓名</label>
+		    		<label for="form-name" class="col-sm-2 control-label input-label">姓名</label>
 		    		<div class="col-sm-10">
-		    			<input type="text" class="form-control" placeholder="请输入长度不大于20字的人名" id="isbn" name="name"><span></span>
+		    			<input type="text" class="form-control my-input" id="form-name" placeholder="请输入长度不大于20字的人名" name="name" required><span></span>
 	    			</div>
 		  		</div>
 		  		<div class="form-group input_row">
-		    		<label for="title" class="col-sm-2 control-label input-label">年龄</label>
+		    		<label for="form-age" class="col-sm-2 control-label input-label">年龄</label>
 		    		<div class="col-sm-10">
-		    			<input type="text" class="form-control" placeholder="请输入正整数的年龄" id="title" name="age"><span></span>
+		    			<input type="text" class="form-control my-input" id="form-age" placeholder="请输入正整数的年龄" name="age" required><span></span>
 		    		</div>
 		  		</div>
 		  		<div class="form-group input_row">
-		    		<label for="author" class="col-sm-2 control-label input-label">国籍</label>
+		    		<label for="form-country" class="col-sm-2 control-label input-label">国籍</label>
 		    		<div class="col-sm-10">
-		    			<input type="text" class="form-control" placeholder="请输入不超过20字的作者国籍" id="author" name="country"><span></span>
+		    			<input type="text" class="form-control my-input" id="form-country" placeholder="请输入不超过20字的作者国籍" name="country" required><span></span>
 		    		</div> 
 		  		</div>
 	
@@ -48,6 +48,7 @@
 			</div>
 		</div>
 		</div>
+		<%@ include file="page_footer.jsp" %>
 </div>
 
 </body>

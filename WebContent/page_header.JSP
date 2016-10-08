@@ -4,6 +4,6 @@
 <!-- Navigation -->
 <div class="navbar navbar-default" role="navigation" style="margin-bottom:0;height:100%">
 	<div class="navbar-header">
-      <a class="navbar-brand" href="#" style="font-size: 22px;">图书管理系统</a>
+      <a class="navbar-brand" href="/LibraryManagement" style="font-size: 22px;">图书管理系统</a>
     </div>
 </div>

@@ -4,9 +4,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%@ include file="static.html" %>
-<title>图书管理系统-全部图书</title>
+<title>图书管理系统-作者图书</title>
 </head>
 <body>
 <div class="wrapper">
@@ -18,12 +18,13 @@
 			<%@ include file="menu.JSP" %>
 		</div>
 		<div class="main">
-			<h1>全部图书</h1>
+			<h1>作者图书</h1>
 			<hr>
-			<s:if test="%{empty}">
-				<h2>没有图书信息！请先<a href="insert_book">添加图书/a></h2>
+			<s:if test="%{!rsNum}">
+				<h2>暂无该作者创作的图书！</h2>
 			</s:if>
 			<s:else>
+			<p style="color: #777;">该作者的图书共计<span class="badge"><s:property value="rsNum"/></span>本</p>
 			<table class="table table-condensed table-hover">
 				<tr>
 					<th>书名</th>
@@ -54,6 +55,5 @@
 	</div>
 	<%@ include file="page_footer.jsp" %>
 </div>
-
 </body>
 </html>

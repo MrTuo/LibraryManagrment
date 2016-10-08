@@ -9,14 +9,73 @@
     <!-- 主页 -->
      <action name = "index" class="com.LibraryManagement.HandleBook">
      	<result name = "success">/index.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
      </action>
+     
 	<!-- 添加图书 -->
      <action name = "insert_book" class="com.LibraryManagement.Book" method="InsertBook">
-     	<result name = "success">/index.jsp</result>
+     	<result name = "success">/insert_book.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
      </action>
+     
+     <!--保存图书 -->
+     <action name = "insert_book_save" class="com.LibraryManagement.Book" method="InsertBookSave">
+     	<result name = "success">/success.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
+     </action>
+     
 	<!-- 添加作者 -->
 	<action name = "insert_author" class="com.LibraryManagement.Author" method="InsertAuthor">
-     	<result name = "success">/index.jsp</result>
+     	<result name = "success">/success.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
+     </action>
+     
+     <!-- 全部图书 -->
+     <action name = "index_book" class="com.LibraryManagement.Book" method="IndexBook">
+     	<result name = "success">/index_book.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
+     </action>
+     
+     <!-- 全部作者 -->
+	<action name = "index_author" class="com.LibraryManagement.Author" method="IndexAuthor">
+     	<result name = "success">/index_author.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
+     </action>
+     
+     <!-- 查询作者 -->
+	<action name = "query_author" class="com.LibraryManagement.Author" method="QueryAuthor">
+     	<result name = "success">/query_index.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
+     </action>
+     
+     <!-- 查看作者对应的图书信息 -->
+     <action name = "author_book" class="com.LibraryManagement.Book" method="AuthorBook">
+     	<result name = "success">/author_book.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
+     </action>
+     
+     <!-- 编辑图书信息 -->
+     <action name = "edit_book" class="com.LibraryManagement.Book" method="EditBook">
+     	<result name = "success">/edit_book.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
+     </action>
+     
+     <!-- 保存编辑图书信息 -->
+     <action name = "edit_book_save" class="com.LibraryManagement.Book" method="EditBookSave">
+     	<result name = "success">/success.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
+     </action>
+     
+     <!-- 删除图书 -->
+     <action name = "delete_book" class="com.LibraryManagement.Book" method="DeleteBook">
+     	<result name = "success">/success.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
+     </action>
+     
+     <!-- 作者信息 -->
+     <action name = "check_author" class="com.LibraryManagement.Author" method="CheckAuthor">
+     	<result name = "success">/check_author.jsp</result>
+     	<result name = "failed">/failed.jsp</result>
      </action>
      
 	
